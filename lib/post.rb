@@ -10,7 +10,7 @@ class Post
     @@all
   end
   
-  def artist_name
-    self.artist ? self.artist.name : nil
+  def author_name
+    self.author ? self.author.name : nil
   end
 end
