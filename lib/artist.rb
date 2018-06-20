@@ -1,13 +1,13 @@
 require 'pry'
 class Artist 
-  @@songs = []
   attr_accessor :name, :songs
   def initialize(name)
     @name = name
+    @songs = []
   end
   
   def add_song(song)
-    @@songs << song
+    @songs << song
     song.artist = self
   end
   
@@ -16,7 +16,7 @@ class Artist
     self.add_song(song)
   end
   def self.song_count
-    @@songs.count 
+    @songs.count 
   end
   binding.pry
 end
