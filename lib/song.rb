@@ -1,4 +1,3 @@
-require 'pry'
 class Song 
   @@all = []
   attr_accessor :name, :artist 
@@ -14,5 +13,4 @@ class Song
   def artist_name
     self.artist ? self.artist.name : nil
   end
-
 end
