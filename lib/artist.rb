@@ -1,7 +1,7 @@
 require 'pry'
 class Artist 
   attr_accessor :name 
-  def initialzie(name)
+  def initialize(name)
     @name = name 
   end
   binding.pry
